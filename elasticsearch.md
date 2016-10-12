@@ -57,7 +57,8 @@ To get details and reason for the unassigned shards:
 	
 	curl -X GET http://localhost:9200/_cat/shards?index,unassigned.reason
 
-To fix unassigned shards with transient settings:
+To fix unassigned shards with transient settings:	
+[Stackoverflow Link](http://stackoverflow.com/a/31148851/2405797)
 
 	curl -XPUT http://localhost:9200/_settings -d '{ "number_of_replicas" :0 }'
 	
