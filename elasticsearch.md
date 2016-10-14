@@ -18,6 +18,10 @@ Create an index
 
 	curl -XPUT 'http://localhost:9200/{index_name}'
 
+Delete an index:
+
+	curl -xDELETE 'http:/localhost:9200/{index_name}*
+
 Reindex
 
 	curl -XPUT 'http://localhost:9200/_reindex -d @{filename.json}'
@@ -46,8 +50,8 @@ To get health:
 	curl -X GET http://localhost:9200/_cat/health?v
 	
 To get list of all shards:
-
-        curl -X GET http://localhost:9200/_cat/shards?v
+	
+	curl -X GET http://localhost:9200/_cat/shards?v
 
 To get unassigned only shards:
 	
@@ -56,6 +60,14 @@ To get unassigned only shards:
 To get details and reason for the unassigned shards:
 	
 	curl -X GET http://localhost:9200/_cat/shards?index,unassigned.reason
+
+To get details about all indices:
+
+	curl -X GET http://localhost:9200/_cat/indices
+	
+To get details about a particular index:
+
+	curl -X GET http://localhost:9200/_cat/indices/{index-name}
 
 To fix unassigned shards with transient settings:	
 [Stackoverflow Link](http://stackoverflow.com/a/31148851/2405797)
