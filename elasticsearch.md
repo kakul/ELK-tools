@@ -1,3 +1,7 @@
+Elasticsearch config file path
+
+	/etc/elasticsearch/elasticsearch.yml
+	
 Get elastichsearch info
 
 	curl -XGET 'http://localhost:9200'
