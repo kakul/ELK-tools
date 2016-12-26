@@ -5,3 +5,5 @@ Some useful ELK cheat sheets
 [Some elasticsearch commands](elasticsearch.md)
 
 [A useful blog for reference](qbox.io)
+
+[Some useful info from Digital Ocean blog](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-production-elasticsearch-cluster-on-ubuntu-14-04)
